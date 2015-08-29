@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+<html lang="en-CA">
+
+  <head>
+    <title> APP - Rylai's </title>
+    
+    <!--Texts-->
+    <link href='http://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
+    <!--Styles-->
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/static/items.css">
+  
+    <!--Metadata--> 
+    <meta name="keywords" content="david skudra, waterloo, computer science, league of legends, lol, ap, ability power parity, ability power, 5.14, 5.13, 5.11, riot games, riot, api, api challenge 2.0, rylai's crystal scepter">
+    <meta name="description" content="In-depth analysis of AP item changes in patch 5.13">
+  
+    <!--Scripts-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-66163034-2', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/rylai.js"></script>
+  </head>
+  
+  <body>
+  <div class="main">
+    <div class="navigation">
+      <ul class="nav nav-pills">
+        <li><a href="/items/Archangels-Staff"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3003.png" height="64" width="64"></a></li>
+        <li><a href="/items/Athenes-Unholy-Grail"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3174.png" height="64" width="64"></a></li>
+        <li><a href="/items/Liandrys-Torment"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3151.png" height="64" width="64"></a></li>
+        <li><a href="/items/Ludens-Echo"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3285.png" height="64" width="64"></a></li>
+        <li><a href="/items/Morellonomicon"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3165.png" height="64" width="64"></a></li>
+        <li><a href="/items/Nashors-Tooth"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3115.png" height="64" width="64"></a></li>
+        <li><a href="/items/Rabadons-Deathcap"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3089.png" height="64" width="64"></a></li>
+        <li><a href="/items/Rod-Of-Ages"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3027.png" height="64" width="64"></a></li>
+        <li><a href="/items/Void-Staff"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3135.png" height="64" width="64"></a></li>
+        <li><a href="/items/Will-Of-The-Ancients"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3152.png" height="64" width="64"></a></li>
+        <li><a href="/items/Zhonyas-Hourglass"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3157.png" height="64" width="64"></a></li>
+        <li><a href="/"><h3>HOME</h3></a></li>
+      </ul>
+    </div>
+    
+    <div class="container">
+      <div class="row">
+        <div class="item-panel">
+          <div class="col-md-4">
+          <center>
+          <h2>Rylai's Crystal Scepter</h2>
+            <div class="row">
+              <div class="col-xs-6">
+                <h3>5.11</h3>
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3116.png"></div>
+                <h5>2900g</h5>
+                <h5>&uarr;</h5>
+              </div>
+              <div class="col-xs-6">
+                <h3>5.14</h3>
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3116.png"></div>
+                <h5>3000g</h5>
+                <h5>&uarr;</h5>
+              </div>
+              <div class="col-xs-6">
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/item/1026.png"></div>
+                <h5>860g</h5>
+                <h5>+</h5>
+              </div>
+              <div class="col-xs-6">
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/item/1058.png"></div>
+                <h5>1250g</h5>
+                <h5>+</h5>
+              </div>
+              <div class="col-xs-6">
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/item/1052.png"></div>
+                <h5>435g</h5>
+                <h5>+</h5>
+              </div>
+              <div class="col-xs-6">
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/item/1052.png"></div>
+                <h5>435g</h5>
+                <h5>+</h5>
+              </div>
+              <div class="col-xs-6">
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/item/1011.png"></div>
+                <h5>1000g</h5>
+                <h5>+</h5>
+              </div>
+              <div class="col-xs-6">
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/item/1011.png"></div>
+                <h5>1000g</h5>
+                <h5>+</h5>
+              </div>
+              <div class="col-xs-6">
+                <h5>605g</h5><br><br>
+              </div>
+              <div class="col-xs-6">
+                <h5>315g</h5><br><br>
+              </div>
+              <div class="col-xs-6">
+                <h5>Single Target Slow: 35%</h5>
+              </div>
+              <div class="col-xs-6">
+                <h5>Single Target Slow: 40%</h5>
+              </div>
+              <div class="col-xs-6">
+                <h5>Area of Effect Slow: 15%</h5>
+              </div>
+              <div class="col-xs-6">
+                <h5>Area of Effect Slow: 40%</h5>
+              </div>
+              <div class="col-xs-6">
+                <h5>Damage Over Time/Multi-Hit Slow: 15% for 1.5 seconds</h5>
+              </div>
+              <div class="col-xs-6">
+                <h5>Damage Over Time/Multi-Hit Slow: 20% for 1 second</h5>
+              </div>
+            </div>
+          <h5>New - Summoned minions apply a 20% slow for 1 second</h5>
+          </center>
+          </div>
+        </div>
+        
+        <div class="info-tab">
+          <div class="col-md-4">
+          <div class="default">
+            <center><h2>Dataset</h2></center>
+            <br>
+            <h5>5.11 Winrate: 56.74%</h5>
+            <h5>5.14 Winrate: 58.44%</h5>
+            <h5>Winrate change: 1.70%</h5>
+            <h5>Built per game in 5.11: 0.24</h5>
+            <h5>Built per game in 5.14: 0.32</h5>
+            <h5>Built per game % change: 33.33%</h5>
+            <br>
+            <h5>Average 5.11 win game length: 24.49 minutes</h5>
+            <h5>Average 5.14 win game length: 23.65 minutes</h5>
+            <h5>Average win game length % change: -3.55%</h5>
+            <h5>Average 5.11 loss game length: 25.48 minutes</h5>
+            <h5>Average 5.14 loss game length: 24.89 minutes</h5>
+            <h5>Average loss game length % change: -2.37%</h5>
+            <br>
+            <p class="summtab">With the slow stacking changes in patch 5.13, Rylai's needed to be adjusted as to not risk breaking the game. The changes applied to Rylai's still make it stronger than previous with a new build path and a stronger passive - if you use it correctly. As expected, Rylai's winrate increased to the highest of it's breed, making it the top winrate of any AP item changed in patch 5.13 (tied with Nashor's). All in all Rylai's became much stronger and as a result, a bigger temptation for ability power users to get some variety in their build.</p>
+            <p class="summtab">"Truth be told, this thing's going to be pretty strong." The patch notes hit this one spot on, hopefully with it being such a great item, it's popularity reflects this in the coming patches.</p>
+          </div>          
+          
+          <div class="ruminfo">
+            <h5>Rumble built Rylai's 31.88% of the time in patch 5.11.</h5>
+            <h5>Rumble built Rylai's 33.84% of the time in patch 5.14.</h5>
+            <h5>Rumble built Rylai's 1.96% of the time in patch 5.14.</h5>
+            <p>The changes to Rylai's and slow stacking might be a bit confusing on the surface but definitely still work well with Rumble's kit. Rumble players build Rylai's 2% more as of patch 5.14, but in the future it would make sense for that number to continually grow as players realize how great an item Rylai's is on Rumble along with the new slow stacking changes.</p>
+          </div>
+          <div class="korinfo">
+            <p>Before it was updated, Rylai's was very unpopular on the Korean server compared to the global average. Changing the item and how slow stacking functions did not help this whatsoever. Korea went from 0.11 Rylai's per game to 0.12 Rylai's per game, while the global average went from 0.24 Rylai's per game to 0.32 Rylai's per game.</p>
+            <p>Someone go tell the Korean server its okay, the item's winrate went up to 58%!</p>
+          </div>
+          </div>
+        </div>
+        
+        <div class="picture-panel">
+          <div class="col-md-4">
+          <center><h2>Learn More!</h2>
+            <br>
+            <img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/champion/Mordekaiser.png" class="mordicon">
+            <img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/champion/Elise.png" class="eliseicon">
+            <img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/champion/Vladimir.png" class="vladicon">
+            <img src="/static/images/Cup.png" class="korpic">
+            <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Rumble_0.jpg" class="rumpic">
+            <h4 class="rumble">Rumble Building Rylai's</h4>
+            <br>
+            <h4 class="korea">Korea Building Rylai's</h4>
+            <br>
+            <h4 class="summary">Item Summary</h4>
+            <br>
+            <h2 class="backbutton">&larr; Try Another!</h2>
+          </div></center>
+        </div>
+        
+      </div>
+    </div>   
+  
+  </div>    
+  </body>
+</html>

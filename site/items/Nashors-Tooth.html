@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+<html lang="en-CA">
+
+  <head>
+    <title> APP - Nashor's </title>
+    
+    <!--Texts-->
+    <link href='http://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
+    <!--Styles-->
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/static/items.css">
+  
+    <!--Metadata--> 
+    <meta name="keywords" content="david skudra, waterloo, computer science, league of legends, lol, ap, ability power parity, ability power, 5.14, 5.13, 5.11, riot games, riot, api, api challenge 2.0, nashor's tooth">
+    <meta name="description" content="In-depth analysis of AP item changes in patch 5.13">
+  
+    <!--Scripts-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-66163034-2', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/nash.js"></script>
+  </head>
+  
+  <body>
+  <div class="main">
+    <div class="navigation">
+      <ul class="nav nav-pills">
+        <li><a href="/items/Archangels-Staff"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3003.png" height="64" width="64"></a></li>
+        <li><a href="/items/Athenes-Unholy-Grail"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3174.png" height="64" width="64"></a></li>
+        <li><a href="/items/Liandrys-Torment"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3151.png" height="64" width="64"></a></li>
+        <li><a href="/items/Ludens-Echo"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3285.png" height="64" width="64"></a></li>
+        <li><a href="/items/Morellonomicon"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3165.png" height="64" width="64"></a></li>
+        <li><a href="/items/Rabadons-Deathcap"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3089.png" height="64" width="64"></a></li>
+        <li><a href="/items/Rod-Of-Ages"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3027.png" height="64" width="64"></a></li>
+        <li><a href="/items/Rylais-Crystal-Scepter"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3116.png" height="64" width="64"></a></li>
+        <li><a href="/items/Void-Staff"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3135.png" height="64" width="64"></a></li>
+        <li><a href="/items/Will-Of-The-Ancients"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3152.png" height="64" width="64"></a></li>
+        <li><a href="/items/Zhonyas-Hourglass"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3157.png" height="64" width="64"></a></li>
+        <li><a href="/"><h3>HOME</h3></a></li>
+      </ul>
+    </div>
+    
+    <div class="container">
+      <div class="row">
+        <div class="item-panel">
+          <div class="col-md-4">
+          <center>
+          <h2>Nashor's Tooth</h2>
+            <div class="row">
+              <div class="col-xs-6">
+                <h3>5.11</h3>
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3115.png"></div>
+                <h5>2920g</h5>
+                <h5>&uarr;</h5>
+              </div>
+              <div class="col-xs-6">
+                <h3>5.14</h3>
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3115.png"></div>
+                <h5>3000g</h5>
+                <h5>&uarr;</h5>
+              </div>
+              <div class="col-xs-6">
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/item/3101.png"></div>
+                <h5>1250g</h5>
+                <h5>+</h5>
+              </div>
+              <div class="col-xs-6">
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/item/3101.png"></div>
+                <h5>1250g</h5>
+                <h5>+</h5>
+              </div>
+              <div class="col-xs-6">
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/item/3108.png"></div>
+                <h5>820g</h5>
+                <h5>+</h5>
+              </div>
+              <div class="col-xs-6">
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/item/3108.png"></div>
+                <h5>820g</h5>
+                <h5>+</h5>
+              </div>
+              <div class="col-xs-6">
+                <h5>850g</h5><br><br>
+              </div>
+              <div class="col-xs-6">
+                <h5>930g</h5><br><br>
+              </div>
+              <div class="col-xs-6">
+                <h5>+50% Attack Speed</h5>
+              </div>
+              <div class="col-xs-6">
+                <h5>+40% Attack Speed</h5>
+              </div>
+              <div class="col-xs-6">
+                <h5>+60 Ability Power</h5>
+              </div>
+              <div class="col-xs-6">
+                <h5>+80 Ability Power</h5>
+              </div>
+              
+            </div>
+          <h5>Unique Passive - +20% Cooldown Reduction</h5>
+          <h5>Unique Passive - Basic attacks deal 15 (+15% of Ability Power) bonus magic damage on hit.</h5>
+          </center>
+          </div>
+        </div>
+        
+        <div class="info-tab">
+          <div class="col-md-4">
+          <div class="default">
+            <center><h2>Dataset</h2></center>
+            <br>
+            <h5>5.11 Winrate: 53.90%</h5>
+            <h5>5.14 Winrate: 55.62%</h5>
+            <h5>Winrate change: 1.72%</h5>
+            <h5>Built per game in 5.11: 0.12</h5>
+            <h5>Built per game in 5.14: 0.18</h5>
+            <h5>Built per game % change: 33.33%</h5>
+            <br>
+            <h5>Average 5.11 win game length: 22.77 minutes</h5>
+            <h5>Average 5.14 win game length: 21.83 minutes</h5>
+            <h5>Average win game length % change: -4.31%</h5>
+            <h5>Average 5.11 loss game length: 23.22 minutes</h5>
+            <h5>Average 5.14 loss game length: 22.51 minutes</h5>
+            <h5>Average loss game length % change: -3.15%</h5>
+            <br>
+            <p class="summtab">Summary: Nashor's Tooth has been one of the least popular AP items for a very long time. If you weren't Kayle, this item wasn't really all that beneficial to your kit. AP and CDR sounds great, but throwing a bonus 50% attack speed in there made the item seem very expensive to someone who wasn't specifically looking for attack speed for auto attack procs. After being updated, Nashor's has shifted away from attack speed and towards ability power, in hopes of appealing to a broader set of champions. While the item proportionally increased by 35.14%, going from being built once every 4 games to once every 3 games isn't exactly what makes a popular item. Nashor's has found it's way into the inventories of more summoners, so it is a step in the right direction.</p>
+            <p class="summtab">"We're hoping this change will make it a little more enticing as a niche pickup for people not... Kayle." If you share this opinion, I would advise <i>against</i> checking out the Kayle tab to the right.</p>
+          </div>
+          <div class="kayleinfo">
+            <h5>Kayle built Nashor's 69.00% of the time in patch 5.11.</h5>
+            <h5>Kayle built Nashor's 79.73% of the time in patch 5.14.</h5>
+            <h5>Kayle built Nashor's 10.74% more after it was updated.</h5>
+            <p>Before the update, over 30% of Kayle players weren't building Nashor's Tooth. <a href="https://www.youtube.com/watch?v=c1QxSfMUujo&feature=youtu.be&t=2m24s">HUH?!</a> Thankfully this patch helped about 10% more Kayle players see the light. With Nashor's increased winrate and the item fitting Kayle's kit so well, hopefully the other 20% come around soon.</p>
+          </div>
+          <div class="azirinfo">
+            <h5>Azir built Nashor's 20.14% of the time in patch 5.11.</h5>
+            <h5>Azir built Nashor's 24.32% of the time in patch 5.14.</h5>
+            <h5>Azir built Nashor's 4.18% more after it was updated.</h5>
+            <p>While the popularity of Nashor's on Azir did rise with this patch, it wasn't nearly as much as expected between the item's increased efficiency for AP mages and the changes made to Azir. Hopefully in the coming patches, it will continue to rise in popularity with Azir (as there aren't many other champions going with Nashor's).</p>
+          </div>
+          <div class="kornash">
+            <p>On patch 5.11, Nashor's Tooth was incredibly unpopular on Azir in Korea, clocking in at a 9.81% chance of it being built every game. Comparatively, the global average for this was 21.29 (not including Korea).</p>
+            <p>On patch 5.14 after Nashor's Tooth had recieved it's changes, it found a 17.5% chance of being built on Azir in Korea, compared to 25.08% globally. While Korean Azir players are still not as warm to building Nashor's as the rest of the world, the changes made it about twice as popular in Korea.</p>
+          </div>
+          <div class="rusnash">
+            <p>Something about Nashor's tooth sits just right with Russian players in unranked matches. In patch 5.11, Nashor's tooth was built in 26% of normal games in Russia, compared to 14% of normal games, the global average. In patch 5.14, Nashor's tooth was built in 38% of of games in Russia, compared to 18% of normal games, the global average.</p>
+            <p>We all know normal queue is the place to have a bit looser of a build, but Russian players take it to a new extreme with Nashor's Tooth.</p>
+          </div>
+          </div>
+        </div>
+        
+        <div class="picture-panel">
+          <div class="col-md-4">
+          <center><h2>Learn More!</h2>
+            <br>
+            <img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/champion/Diana.png" class="dianaicon">
+            <img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/champion/Kayle.png" class="kayleicon">
+            <img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/champion/Teemo.png" class="teemoicon">
+            <img src="/static/images/Shurima.png" class="korpic">
+            <img src="http://img2.wikia.nocookie.net/__cb20150411083321/leagueoflegends/images/0/03/RU_server.png" class="ruspic">
+            <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Kayle_6.jpg" class="kaylepic">
+            <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Azir_0.jpg" class="azirpic">
+            <h4 class="kayle">Kayle Building Nashor's</h4>
+            <br>
+            <h4 class="azir">Azir Building Nashor's</h4>
+            <br>
+            <h4 class="korea">Korean Azirs Building Nashor's</h4>
+            <br>
+            <h4 class="russia">Russia and Nashor's</h4>
+            <br>
+            <h4 class="summary">Item Summary</h4>
+            <br>
+            <h2 class="backbutton">&larr; Try Another!</h2>
+          </div></center>
+        </div>
+        
+      </div>
+    </div>
+  
+  </div>    
+  </body>
+</html>

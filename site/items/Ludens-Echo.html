@@ -1,0 +1,220 @@
+<!DOCTYPE HTML>
+<html lang="en-CA">
+
+  <head>
+    <title> APP - Luden's </title>
+    
+    <!--Texts-->
+    <link href='http://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
+    <!--Styles-->
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/static/items.css">
+  
+    <!--Metadata--> 
+    <meta name="keywords" content="david skudra, waterloo, computer science, league of legends, lol, ap, ability power parity, ability power, 5.14, 5.13, 5.11, riot games, riot, api, api challenge 2.0, luden's echo">
+    <meta name="description" content="In-depth analysis of AP item changes in patch 5.13">
+  
+    <!--Scripts-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-66163034-2', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/luden.js"></script>
+  </head>
+  
+  <body>
+  <div class="main">
+    <div class="navigation">
+      <ul class="nav nav-pills">
+        <li><a href="/items/Archangels-Staff"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3003.png" height="64" width="64"></a></li>
+        <li><a href="/items/Athenes-Unholy-Grail"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3174.png" height="64" width="64"></a></li>
+        <li><a href="/items/Liandrys-Torment"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3151.png" height="64" width="64"></a></li>
+        <li><a href="/items/Morellonomicon"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3165.png" height="64" width="64"></a></li>
+        <li><a href="/items/Nashors-Tooth"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3115.png" height="64" width="64"></a></li>
+        <li><a href="/items/Rabadons-Deathcap"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3089.png" height="64" width="64"></a></li>
+        <li><a href="/items/Rod-Of-Ages"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3027.png" height="64" width="64"></a></li>
+        <li><a href="/items/Rylais-Crystal-Scepter"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3116.png" height="64" width="64"></a></li>
+        <li><a href="/items/Void-Staff"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3135.png" height="64" width="64"></a></li>
+        <li><a href="/items/Will-Of-The-Ancients"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3152.png" height="64" width="64"></a></li>
+        <li><a href="/items/Zhonyas-Hourglass"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3157.png" height="64" width="64"></a></li>
+        <li><a href="/"><h3>HOME</h3></a></li>
+      </ul>
+    </div>
+    
+    <div class="container">
+      <div class="row">
+        <div class="item-panel">
+          <div class="col-md-4">
+          <center>
+          <h2>Luden's Echo</h2>
+            <div class="row">
+              <div class="col-xs-6">
+                <h3>5.11</h3>
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3285.png"></div>
+                <h5>3300g</h5>
+                <h5>&uarr;</h5>
+              </div>
+              <div class="col-xs-6">
+                <h3>5.14</h3>
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3285.png"></div>
+                <h5>3000g</h5>
+                <h5>&uarr;</h5>
+              </div>
+              <div class="col-xs-6">
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/item/1058.png"></div>
+                <h5>1600g</h5>
+                <h5>+</h5>
+              </div>
+              <div class="col-xs-6">
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/item/1058.png"></div>
+                <h5>1250g</h5>
+                <h5>+</h5>
+              </div>
+              <div class="col-xs-6">
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/item/3113.png"></div>
+                <h5>850g</h5>
+                <h5>+</h5>
+              </div>
+              <div class="col-xs-6">
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/item/3113.png"></div>
+                <h5>850g</h5>
+                <h5>+</h5>
+              </div>
+              <div class="col-xs-6">
+                <h5>850g</h5><br><br>
+              </div>
+              <div class="col-xs-6">
+                <h5>900g</h5><br><br>
+              </div>
+              <div class="col-xs-6">
+                <h5>+120 Ability Power</h5>
+              </div>
+              <div class="col-xs-6">
+                <h5>+100 Ability Power</h5>
+              </div>
+              <div class="col-xs-6">
+                <h5>+7% Movement Speed</h5>
+              </div>
+              <div class="col-xs-6">
+                <h5>+10% Movement Speed</h5>
+              </div>
+              
+            </div>
+          <h5>Unique Passive - Charge Expend</h5>
+          </center>
+          </div>
+        </div>
+        
+        <div class="info-tab">
+          <div class="col-md-4">
+          <div class="default">
+            <center><h2>Dataset</h2></center>
+            <br>
+            <h5>5.11 Winrate: 55.46%</h5>
+            <h5>5.14 Winrate: 55.84%</h5>
+            <h5>Winrate change: 0.38%</h5>
+            <h5>Built per game in 5.11: 1.23</h5>
+            <h5>Built per game in 5.14: 0.92</h5>
+            <h5>Built per game % change: -25.20%</h5>
+            <br>
+            <h5>Average 5.11 win game length: 22.30 minutes</h5>
+            <h5>Average 5.14 win game length: 22.01 minutes</h5>
+            <h5>Average win game length % change: -1.30%</h5>
+            <h5>Average 5.11 loss game length: 23.32 minutes</h5>
+            <h5>Average 5.14 loss game length: 23.03 minutes</h5>
+            <h5>Average loss game length % change: -1.26%</h5>
+            <br>
+            <p class="summtab">Summary: Luden's Echo saw a massive dip in popularity, but managed to not suffer whatsoever in winrate. The changes applied to Luden's made the item a lot more unique than it was previously. Before patch 5.13, most AP mages would build Luden's with the thought process of "All that AP, an awesome passive and some movement speed on the side? Sign me up!" Now the item is centered on mages who are looking for mobility and something that fits their kit, not just loads of AP. Hence the large decrease in popularity but the untouched winrate. Now the item caters to a less broad audience but is still worth the purchase on the right champions. Hurray for parity!</p>
+            <p class="summtab">"Remember back in patch 5.11 when we talked about Luden's Echo and how we wanted to continue pushing it in a unique direction? Well, that hasn't changed." And how!</p>
+          </div>
+          <div class="koginfo">
+            <h5>Kog'Maw built Luden's 28.91% of the time in patch 5.11.</h5>
+            <h5>Kog'Maw built Luden's 29.34% of the time in patch 5.14.</h5>
+            <h5>Kog'Maw built Luden's 0.48% more after it was updated.</h5>
+            <p>In a patch where Luden's Echo suffered a huge dip in popularity, Kog'Maw actually managed a higher built per game rate. This makes sense as the changes to Luden's Echo don't affect Kog'Maw negatively at all, infact the added mobility is actually great for his kit considering how immobile Kog'Maw is as a champion. The low overall buildrate is simply because Kog'Maw is a very qualified ADC... Unless you're TSM.</p>
+          </div>
+          <div class="ahriinfo">
+            <h5>Ahri built Luden's 71.49% of the time in patch 5.11.</h5>
+            <h5>Ahri built Luden's 67.23% of the time in patch 5.14.</h5>
+            <h5>Ahri built Luden's -4.26% less after it was updated.</h5>
+            <p>Luden's Echo was always popular on Ahri due to it's passive working so well with Ahri's long-range skillshots. Ahri did suffer a noticable change in how often Luden's was built but this is likely related to players wanting the pure AP of something like Rabadon's.</p>
+          </div>
+          <div class="syndinfo">
+            <h5>Syndra built Luden's 52.98% of the time in patch 5.11.</h5>
+            <h5>Syndra built Luden's 50.71% of the time in patch 5.14.</h5>
+            <h5>Syndra built Luden's -2.28% less after it was updated.</h5>
+            <p>As about par for the course, Syndra took a hit in how often Luden's Echo was built. This does fit the narrative of more "equality" in which AP items are built that Riot was going for in this patch. Hopefully Syndra didn't just replace Luden's with Rabadon's or Zhonya's!</p>
+          </div>
+          <div class="lebinfo">
+            <h5>LeBlanc built Luden's 59.89% of the time in patch 5.11.</h5>
+            <h5>LeBlanc built Luden's 53.59% of the time in patch 5.14.</h5>
+            <h5>LeBlanc built Luden's -6.30% less after it was updated.</h5>
+            <p>The decrease in popularity here is great for the general balance of AP items, as burst mages like LeBlanc now have more options to find some AP instead of just going for what was the flat 120 AP on Luden's.</p>
+          </div>
+          <div class="katinfo">
+            <h5>Katarina built Luden's 79.38% of the time in patch 5.11.</h5>
+            <h5>Katarina built Luden's 77.39% of the time in patch 5.14.</h5>
+            <h5>Katarina built Luden's -1.99% less after it was updated.</h5>
+            <p>Following the trend of most of these dangerous AP champions covered, Katarina saw a decrease in how often Luden's was built. It is still pretty much a staple item on Katarina, considering how "free" it is to proc the passive on your opponents.</p>
+          </div>
+          <div class="xerinfo">
+            <h5>Xerath built Luden's 56.88% of the time in patch 5.11.</h5>
+            <h5>Xerath built Luden's 53.48% of the time in patch 5.14.</h5>
+            <h5>Xerath built Luden's -3.40% less after it was updated.</h5>
+            <p>Xerath fit the groove of Luden's popularity decrease as well, but is overall still a viable choice on an AP caster with limited mobility, similar to Kog'Maw.</p>
+          </div>
+          <div class="korinfo">
+            <p>Luden's Echo became much less popular after it was updated, rightfully so. What you don't see on the general stats page is that Luden's was much less popular in Korea compared to other regions. Korean games on patch 5.11 had an average 0.75 Luden's per game, while the global average was 1.23 Luden's per game. On patch 5.14, Korean games had an average of 0.67 Luden's per game, while the global average was 1.92 Luden's per game.</p>
+            <p>The important thing to note here is that despite the changes to Luden's Echo, it's popularity barely changed in Korea while it took a huge drop globally. One possible implication here is that most players on the Korean server were only building Luden's on more appropriate champions like Kog'Maw and skipping out on building it any time you wanted 120AP and a nice passive.</p>
+          </div>
+          </div>
+        </div>
+        
+        <div class="picture-panel">
+          <div class="col-md-4">
+          <center><h2>Learn More!</h2>
+            <br>
+            <img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/champion/Ahri.png" class="ahriicon">
+            <img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/champion/Katarina.png" class="katicon">
+            <img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/champion/Ekko.png" class="ekkoicon">
+            <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/KogMaw_0.jpg" class="kogpic">
+            <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Ahri_0.jpg" class="ahripic">
+            <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Syndra_1.jpg" class="syndpic">
+            <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Leblanc_0.jpg" class="lebpic">
+            <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Katarina_5.jpg" class="katpic">
+            <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Xerath_0.jpg" class="xerpic">
+            <img src="/static/images/Korea.png" class="korpic">
+            <h4 class="kogmaw">Kog'Maw Building Luden's</h4>
+            <br>
+            <h4 class="ahri">Ahri Building Luden's</h4>
+            <br>
+            <h4 class="syndra">Syndra Building Luden's</h4>
+            <br>
+            <h4 class="leblanc">LeBlanc Building Luden's</h4>
+            <br>
+            <h4 class="katarina">Katarina Building Luden's</h4>
+            <br>
+            <h4 class="xerath">Xerath Building Luden's</h4>
+            <br>
+            <h4 class="korea">Korea Beating The Meta?!</h4>
+            <br>
+            <h4 class="summary">Item Summary</h4>
+            <br>
+            <h2 class="backbutton">&larr; Try Another!</h2>
+          </div></center>
+        </div>
+        
+      </div>
+    </div>
+  
+  </div>    
+  </body>
+</html>

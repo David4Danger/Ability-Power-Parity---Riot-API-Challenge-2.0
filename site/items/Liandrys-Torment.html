@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html lang="en-CA">
+
+  <head>
+    <title> APP - Liandry's </title>
+    
+    <!--Texts-->
+    <link href='http://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
+    <!--Styles-->
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/static/items.css">
+  
+    <!--Metadata--> 
+    <meta name="keywords" content="david skudra, waterloo, computer science, league of legends, lol, ap, ability power parity, ability power, 5.14, 5.13, 5.11, riot games, riot, api, api challenge 2.0, liandry's torment">
+    <meta name="description" content="In-depth analysis of AP item changes in patch 5.13">
+  
+    <!--Scripts-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-66163034-2', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/lian.js"></script>
+  </head>
+  
+  <body>
+  <div class="main">
+    <div class="navigation">
+      <ul class="nav nav-pills">
+        <li><a href="/items/Archangels-Staff"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3003.png" height="64" width="64"></a></li>
+        <li><a href="/items/Athenes-Unholy-Grail"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3174.png" height="64" width="64"></a></li>
+        <li><a href="/items/Ludens-Echo"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3285.png" height="64" width="64"></a></li>
+        <li><a href="/items/Morellonomicon"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3165.png" height="64" width="64"></a></li>
+        <li><a href="/items/Nashors-Tooth"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3115.png" height="64" width="64"></a></li>
+        <li><a href="/items/Rabadons-Deathcap"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3089.png" height="64" width="64"></a></li>
+        <li><a href="/items/Rod-Of-Ages"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3027.png" height="64" width="64"></a></li>
+        <li><a href="/items/Rylais-Crystal-Scepter"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3116.png" height="64" width="64"></a></li>
+        <li><a href="/items/Void-Staff"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3135.png" height="64" width="64"></a></li>
+        <li><a href="/items/Will-Of-The-Ancients"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3152.png" height="64" width="64"></a></li>
+        <li><a href="/items/Zhonyas-Hourglass"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3157.png" height="64" width="64"></a></li>
+        <li><a href="/"><h3>HOME</h3></a></li>
+      </ul>
+    </div>
+    
+    <div class="container">
+      <div class="row">
+        <div class="item-panel">
+          <div class="col-md-4">
+          <center>
+          <h2>Liandry's Torment</h2>
+            <div class="row">
+              <div class="col-xs-6">
+                <h3>5.11</h3>
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/item/3151.png"></div>
+                <h5>2900g</h5>
+                <h5>&uarr;</h5>
+              </div>
+              <div class="col-xs-6">
+                <h3>5.14</h3>
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/item/3151.png"></div>
+                <h5>3000g</h5>
+                <h5>&uarr;</h5>
+              </div>
+              <div class="col-xs-6">
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/item/3136.png"></div>
+                <h5>1480g</h5>
+                <h5>+</h5>
+              </div>
+              <div class="col-xs-6">
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/item/3136.png"></div>
+                <h5>1500g</h5>
+                <h5>+</h5>
+              </div>
+              <div class="col-xs-6">
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/item/1052.png"></div>
+                <h5>435g</h5>
+                <h5>+</h5>
+              </div>
+              <div class="col-xs-6">
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/item/1026.png"></div>
+                <h5>850g</h5>
+                <h5>+</h5>
+              </div>
+              <div class="col-xs-6">
+                <h5>980g</h5>
+              </div>
+              <div class="col-xs-6">
+                <h5>650g</h5>
+              </div>
+              <div class="col-xs-6">
+                <h5>+50 Ability Power</h5><br><br>
+              </div>
+              <div class="col-xs-6">
+                <h5>+80 Ability Power</h5><br><br>
+              </div>
+            </div>
+          <h5>+300 Health</h5>
+          <h5>Unique Passive - Eyes of Pain: +15 Magic Penetration</h5>
+          <h5>Unique Passive - 3 Second Damage Over Time Effect</h5>
+          </center>
+          </div>
+        </div>
+        
+        <div class="info-tab">
+          <div class="col-md-4">
+          <div class="default">
+            <center><h2>Dataset</h2></center>
+            <br>
+            <h5>5.11 Winrate: 56.66%</h5>
+            <h5>5.14 Winrate: 57.93%</h5>
+            <h5>Winrate change: 1.27%</h5>
+            <h5>Built per game in 5.11: 0.27</h5>
+            <h5>Built per game in 5.14: 0.33</h5>
+            <h5>Built per game % change: 22.22%</h5>
+            <br>
+            <h5>Average 5.11 win game length: 23.19 minutes</h5>
+            <h5>Average 5.14 win game length: 22.67 minutes</h5>
+            <h5>Average win game length % change: -2.23%</h5>
+            <h5>Average 5.11 loss game length: 24.08 minutes</h5>
+            <h5>Average 5.14 loss game length: 23.65 minutes</h5>
+            <h5>Average loss game length % change: -1.82%%</h5>
+            <br>
+            <p class="summtab">Summary: Liandry's Torment recieved a healthy buff to both it's stats and build path, which in turn produced an even higher winrate that previous, and an increase in popularity as well. While it isn't above 2.0 item built per game like Rabadon's, Liandry's is getting there. More parity!</p>
+            <p class="summtab">"Pushing the power of Liandry's to be a more competitive purchase might see a resurgence in proc-focused mages." Having another viable proc-based AP item outside Rylai's is a good start.</p>
+          </div>
+          <div class="rumbleinfo">    
+            <h5>Rumble built Liandry's 75.72% of the time in patch 5.11.</h5>
+            <h5>Rumble built Liandry's 79.73% of the time in patch 5.14.</h5>
+            <h5>Rumble built Liandry's 4.01% more after it was updated.</h5>
+            <p>With the buff Liandry's recieved, it is no surprise that one of it's top proponents was building it even more than before. Now all the Rumbles in the top lane, (and the few still holding on to Rumble mid), get some extra potency with their health, magic penetration, and awesome damage over time. There was no shortage of Bandle City beatdowns to be found after patch 5.13.</p>
+          </div>
+          </div>
+        </div>
+        
+        <div class="picture-panel">
+          <div class="col-md-4">
+          <center><h2>Learn More!</h2>
+          <br>
+          <img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/champion/Elise.png" class="eliseicon">
+          <img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/champion/Brand.png" class="brandicon">
+          <img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/champion/Rumble.png" class="rumbleicon">
+          <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Rumble_0.jpg" class="rumblepic">
+          <h4 class="rumble">Rumble Building Liandry's</h4>
+          <br>
+          <h4 class="summary">Item Summary</h4>
+          <br>
+          <h2 class="backbutton">&larr; Try Another!</h2>
+          </div></center>
+        </div>
+        
+      </div>
+    </div>
+  
+  </div>    
+  </body>
+</html>

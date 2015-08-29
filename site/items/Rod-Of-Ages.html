@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+<html lang="en-CA">
+
+  <head>
+    <title> APP - Rod of Ages </title>
+    
+    <!--Texts-->
+    <link href='http://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
+    <!--Styles-->
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/static/items.css">
+  
+    <!--Metadata--> 
+    <meta name="keywords" content="david skudra, waterloo, computer science, league of legends, lol, ap, ability power parity, ability power, 5.14, 5.13, 5.11, riot games, riot, api, api challenge 2.0, rod of ages">
+    <meta name="description" content="In-depth analysis of AP item changes in patch 5.13">
+  
+    <!--Scripts-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-66163034-2', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/roa.js"></script>
+  </head>
+  
+  <body>
+  <div class="main">
+    <div class="navigation">
+      <ul class="nav nav-pills">
+        <li><a href="/items/Archangels-Staff"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3003.png" height="64" width="64"></a></li>
+        <li><a href="/items/Athenes-Unholy-Grail"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3174.png" height="64" width="64"></a></li>
+        <li><a href="/items/Liandrys-Torment"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3151.png" height="64" width="64"></a></li>
+        <li><a href="/items/Ludens-Echo"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3285.png" height="64" width="64"></a></li>
+        <li><a href="/items/Morellonomicon"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3165.png" height="64" width="64"></a></li>
+        <li><a href="/items/Nashors-Tooth"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3115.png" height="64" width="64"></a></li>
+        <li><a href="/items/Rabadons-Deathcap"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3089.png" height="64" width="64"></a></li>
+        <li><a href="/items/Rylais-Crystal-Scepter"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3116.png" height="64" width="64"></a></li>
+        <li><a href="/items/Void-Staff"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3135.png" height="64" width="64"></a></li>
+        <li><a href="/items/Will-Of-The-Ancients"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3152.png" height="64" width="64"></a></li>
+        <li><a href="/items/Zhonyas-Hourglass"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3157.png" height="64" width="64"></a></li>
+        <li><a href="/"><h3>HOME</h3></a></li>
+      </ul>
+    </div>
+    
+    <div class="container">
+      <div class="row">
+        <div class="item-panel">
+          <div class="col-md-4">
+          <center>
+          <h2>Rod of Ages</h2>
+            <div class="row">
+              <div class="col-xs-6">
+                <h3>5.11</h3>
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3027.png"></div>
+                <h5>2800g</h5>
+                <h5>&uarr;</h5>
+              </div>
+              <div class="col-xs-6">
+                <h3>5.14</h3>
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3027.png"></div>
+                <h5>2700g</h5>
+                <h5>&uarr;</h5>
+              </div>
+              <div class="col-xs-6">
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/item/3010.png"></div>
+                <h5>1200g</h5>
+                <h5>+</h5>
+              </div>
+              <div class="col-xs-6">
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/item/3010.png"></div>
+                <h5>1200g</h5>
+                <h5>+</h5>
+              </div>
+              <div class="col-xs-6">
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/item/1026.png"></div>
+                <h5>860g</h5>
+                <h5>+</h5>
+              </div>
+              <div class="col-xs-6">
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/item/1026.png"></div>
+                <h5>850g</h5>
+                <h5>+</h5>
+              </div>
+              <div class="col-xs-6">
+                <h5>740g</h5><br><br>
+              </div>
+              <div class="col-xs-6">
+                <h5>650g</h5><br><br>
+              </div>
+              <div class="col-xs-6">
+                <h5>+450 Health</h5>
+              </div>
+              <div class="col-xs-6">
+                <h5>+300 Health</h5>
+              </div>
+              <div class="col-xs-6">
+                <h5>+450 Mana</h5>
+              </div>
+              <div class="col-xs-6">
+                <h5>+400 Mana</h5>
+              </div>
+              <div class="col-xs-6">
+                <h5>Mana Growth 20 per minute, max 200</h5>
+              </div>
+              <div class="col-xs-6">
+                <h5>Mana Growth 40 per minute, max 400</h5>
+              </div>
+              <div class="col-xs-6">
+                <h5>Ability Power Growth 2 per minute, max 20</h5>
+              </div>
+              <div class="col-xs-6">
+                <h5>Ability Power Growth 4 per minute, max 40</h5>
+              </div>
+            </div>
+          <h5>Health Growth 20 per minue, max 200.</h5>
+          <h5>+60 Ability Power</h5>
+          <h5>Unique Passive - Valor's Reward</h5>
+          </center>
+          </div>
+        </div>
+        
+        <div class="info-tab">
+          <div class="col-md-4">
+          <div class="default">
+            <center><h2>Dataset</h2></center>
+            <br>
+            <h5>5.11 Winrate: 52.50%</h5>
+            <h5>5.14 Winrate: 51.72%</h5>
+            <h5>Winrate change: -0.78%</h5>
+            <h5>Built per game in 5.11: 0.51</h5>
+            <h5>Built per game in 5.14: 0.45</h5>
+            <h5>Built per game % change: -11.76%</h5>
+            <br>
+            <h5>Average 5.11 win game length: 21.47 minutes</h5>
+            <h5>Average 5.14 win game length: 21.03 minutes</h5>
+            <h5>Average win game length % change: -2.09%</h5>
+            <h5>Average 5.11 loss game length: 21.94 minutes</h5>
+            <h5>Average 5.14 loss game length: 21.52 minutes</h5>
+            <h5>Average loss game length % change: -1.95%</h5>
+            <br>
+            <p class="summtab">Rod of Ages, like many items this patch that weren't in that 120AP trinity, just got more potent. As seen above, Rod of Ages boasts the fastest game times of any AP item changed in this patch. Before being updated it was already incredibly short, but with the changes in sustainability and increased offensive capabilities, the rod is making games all the quicker. It suffered small hits in winrate and popularity, indicating that while these changes are making Rod of Ages games quicker, they aren't necessarily winning these fast games.</p>
+            <p class="summtab">"We want to tune up more of Rod of Ages' offensive AP / mana capabilities", mission accomplished! Is it cold on the rift? Because we're getting a lot of snowball action with these changes.</p>
+          </div> 
+          <div class="korinfo">
+            <p>Rod of Ages had the 2nd shortest average game length during wins of any item on any patch, clocking in at an average gametime of 19.84 minutes in Korea on patch 5.14.</p>
+            <p>Any sub-20 gametime indicates that a lot of games are won even before the surrender option is available. This could be made up of a combination of games snowballing all the time, and the "open mid" phase of games gone bad is a lot more prevalent in Korea.</p>
+          </div>
+          <div class="choinfo">
+            <h5>Cho'Gath built Rod of Ages 76.41% of the time in patch 5.11.</h5>
+            <h5>Cho'Gath built Rod of Ages 76.76% of the time in patch 5.14.</h5>
+            <h5>Cho'Gath built Rod of Ages 0.35% more after it was updated.</h5>
+            <p>While Rod of Ages suffered a bit of a hit in popularity, Cho'Gath players didn't change things up at all. Let the stacks continue!</p>
+          </div>
+          <div class="anivinfo">
+            <h5>Anivia built Rod of Ages 98.27% of the time in patch 5.11.</h5>
+            <h5>Anivia built Rod of Ages 97.09% of the time in patch 5.14.</h5>
+            <h5>Anivia built Rod of Ages -1.18 more after it was updated.</h5>
+            <p>Between Rod of Ages and Archangels, Anivia certainly has a <i>2</i> track mind. The changes to Anivia certainly didn't steer away any of the cryophoenix flock.</p>
+          </div>
+          <div class="karthinfo">
+            <h5>Karthus built Rod of Ages 61.97% of the time in patch 5.11.</h5>
+            <h5>Karthus built Rod of Ages 60.59% of the time in patch 5.14.</h5>
+            <h5>Karthus built Rod of Ages -1.38% less after it was updated.</h5>
+            <p>It seems that despite the chance to get some earlier potency, Karthus players weren't as sold on buying Rod of Ages any more.</p>
+          </div>
+          <div class="kassinfo">
+            <h5>Kassadin built Rod of Ages 81.92% of the time in patch 5.11.</h5>
+            <h5>Kassadin built Rod of Ages 81.77% of the time in patch 5.14.</h5>
+            <h5>Kassadin built Rod of Ages -0.15% less after it was updated.</h5>
+            <p>As seen in all 4 champion case studies, the changes to Rod of Ages had little effect on it's popularity with some of it's more prominent builders. Kassadin was no exception to this, with a discrepancy well under the standard deviation you'll see in this patch.</p>
+          </div>
+          </div>
+        </div>
+        
+        <div class="picture-panel">
+          <div class="col-md-4">
+          <center><h2>Learn More!</h2>
+          <img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/champion/Chogath.png" class="choicon">
+          <img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/champion/Annie.png" class="annieicon">
+          <img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/champion/Malzahar.png" class="malzicon">
+          <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Zed_2.jpg" class="korpic">
+          <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Chogath_4.jpg" class="chopic">
+          <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Anivia_0.jpg" class="anivpic">
+          <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Karthus_0.jpg" class="karthuspic">
+          <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Kassadin_0.jpg" class="kasspic">
+          <br>
+          <h4 class="korea">Rod of Ages in Korea</h4>
+          <br>
+          <h4 class="chogath">Cho'Gath Building Rod of Ages</h4>
+          <br>
+          <h4 class="anivia">Anivia Building Rod of Ages</h4>
+          <br>
+          <h4 class="karthus">Karthus Building Rod of Ages</h4>
+          <br>
+          <h4 class="kassadin">Kassadin Building Rod of Ages</h4>
+          <br>
+          <h4 class="summary">Item Summary</h4>
+          <br>
+          <h2 class="backbutton">&larr; Try Another!</h2>
+          </div></center>
+        </div>
+        
+      </div>
+    </div>
+  
+  </div>    
+  </body>
+</html>

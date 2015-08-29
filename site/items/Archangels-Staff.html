@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html lang="en-CA">
+
+  <head>
+    <title> APP - Archangel's </title>
+    
+    <!--Texts-->
+    <link href='http://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
+    <!--Styles-->
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/static/items.css">
+  
+    <!--Metadata--> 
+    <meta name="keywords" content="david skudra, waterloo, computer science, league of legends, lol, ap, ability power parity, ability power, 5.14, 5.13, 5.11, riot games, riot, api, api challenge 2.0, archangel's staff">
+    <meta name="description" content="In-depth analysis of AP item changes in patch 5.13">
+  
+    <!--Scripts-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-66163034-2', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/arch.js"></script>
+  </head>
+  
+  <body>
+  <div class="main">
+    <div class="navigation">
+      <ul class="nav nav-pills">
+        <li><a href="/items/Athenes-Unholy-Grail"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3174.png" height="64" width="64"></a></li>
+        <li><a href="/items/Liandrys-Torment"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3151.png" height="64" width="64"></a></li>
+        <li><a href="/items/Ludens-Echo"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3285.png" height="64" width="64"></a></li>
+        <li><a href="/items/Morellonomicon"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3165.png" height="64" width="64"></a></li>
+        <li><a href="/items/Nashors-Tooth"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3115.png" height="64" width="64"></a></li>
+        <li><a href="/items/Rabadons-Deathcap"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3089.png" height="64" width="64"></a></li>
+        <li><a href="/items/Rod-Of-Ages"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3027.png" height="64" width="64"></a></li>
+        <li><a href="/items/Rylais-Crystal-Scepter"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3116.png" height="64" width="64"></a></li>
+        <li><a href="/items/Void-Staff"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3135.png" height="64" width="64"></a></li>
+        <li><a href="/items/Will-Of-The-Ancients"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3152.png" height="64" width="64"></a></li>
+        <li><a href="/items/Zhonyas-Hourglass"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3157.png" height="64" width="64"></a></li>
+        <li><a href="/"><h3>HOME</h3></a></li>
+      </ul>
+    </div>
+    
+    <div class="container">
+      <div class="row">
+        <div class="item-panel">
+          <div class="col-md-4">
+          <center>
+          <h2>Archangel's Staff</h2>
+            <div class="row">
+              <div class="col-xs-6">
+                <h3>5.11</h3>
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/item/3003.png"></div>
+                <h5>2700g</h5>
+                <h5>&uarr;</h5>
+              </div>
+              <div class="col-xs-6">
+                <h3>5.14</h3>
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/item/3003.png"></div>
+                <h5>3000g</h5>
+                <h5>&uarr;</h5>
+              </div>
+              <div class="col-xs-6">
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/item/1026.png"></div>
+                <h5>860g</h5>
+                <h5>+</h5>
+              </div>
+              <div class="col-xs-6">
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/item/1058.png"></div>
+                <h5>1250g</h5>
+                <h5>+</h5>
+              </div>
+              <div class="col-xs-6">
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/item/3070.png"></div>
+                <h5>720g</h5>
+                <h5>+</h5>
+              </div>
+              <div class="col-xs-6">
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/item/3070.png"></div>
+                <h5>720g</h5>
+                <h5>+</h5>
+              </div>
+              <div class="col-xs-6">
+                <h5>1120g</h5>
+              </div>
+              <div class="col-xs-6">
+                <h5>1030g</h5>
+              </div>
+              <div class="col-xs-6">
+                <h5>+60 Ability Power</h5><br><br>
+              </div>
+              <div class="col-xs-6">
+                <h5>+80 Ability Power</h5><br><br>
+              </div>
+            </div>
+          <h5>+250 Mana</h5>
+          <h5>+50% Base Mana Regen</h5>
+          <h5>Unique Passive - Insight</h5>
+          <h5>Unique Passive - Mana Charge</h5>
+          </center>
+          </div>
+        </div>
+        
+        <div class="info-tab">
+          <div class="col-md-4">
+          <div class="default">
+            <center><h2>Dataset</h2></center>
+            <br>
+            <h5>5.11 Winrate: 52.90%</h5>
+            <h5>5.14 Winrate: 53.26%</h5>
+            <h5>Winrate change: 0.36%</h5>
+            <h5>Built per game in 5.11: 0.18</h5>
+            <h5>Built per game in 5.14: 0.14</h5>
+            <h5>Built per game % change: -22.2%</h5>
+            <br>
+            <h5>Average 5.11 win game length: 22.43 minutes</h5>
+            <h5>Average 5.14 win game length: 22.26 minutes</h5>
+            <h5>Average win game length % change: -0.76%</h5>
+            <h5>Average 5.11 loss game length: 22.93 minutes</h5>
+            <h5>Average 5.14 loss game length: 22.97 minutes</h5>
+            <h5>Average loss game length % change: 0.17%</h5>
+            <br>
+            <p class="summtab">Archangel's Staff had a slightly higher winrate but was even less popular than it was before. The nature of the changes made to this item aren't too heavy other than the item scaling better, so as you'd expect not very much changed. What is slightly dissapointing was the lack of parity in AP items that these changes had, as Archangel's Staff is even less popular than before when the goal was to increase popularity outside of the Rabadon's/Luden's/Zhonya's trinity.</p>
+            <p class="summtab">"When we were looking for more items to build out of NLR, Archangel's Staff was the first in line with its general growth pattern and 'unlock' potential." It seems without a real change in popularity, patch 5.13 missed the mark on this one a bit.</p>
+          </div>
+          <div class="ryzeinfo">
+            <h5>Ryze built Archangel's 71.76% of the time in patch 5.11.</h5>
+            <h5>Ryze built Archangel's 63.66% of the time in patch 5.14.</h5>
+            <h5>Ryze built Archangel's -8.10% less after it was updated.</h5>
+            <br>
+            <p>What is seemingly a staple item on Ryze suffered a popularity hit after being updated. Statistically, Seraph's improved in winrate, so it is possible (but highly unlikely) that the two are inversely proportional.</p>
+          </div>
+          <div class="anivinfo">
+            <h5>Anivia built Archangel's 94.90% of the time in patch 5.11.</h5>
+            <h5>Anivia built Archangel's 92.15% of the time in patch 5.14.</h5>
+            <h5>Anivia built Archangel's -2.75% less after it was updated.</h5>
+            <br>
+            <p>Both before and after Archangel's was updated, it was and is built by nearly every single Anivia player. This is expected as it is such a great item on Anivia and the changes weren't drastic enough to warrant anything different. I just hope that the small percentage of Anivias that didn't build Archangel's got second blue buff.</p>
+          </div>
+          </div>
+        </div>
+        
+        <div class="picture-panel">
+          <div class="col-md-4">
+            <center><h2>Learn More!</h2>
+            <br>
+            <img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/champion/Anivia.png" class="anivicon">
+            <img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/champion/Orianna.png" class="oriicon">
+            <img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/champion/Cassiopeia.png" class="cassicon">
+            <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Anivia_5.jpg" class="anivpic">
+            <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Ryze_0.jpg" class="ryzepic">
+            <h4 class="ryze">Ryze Building Archangel's</h4>
+            <br>
+            <h4 class="anivia">Anivia Building Archangel's</h4>
+            <br>
+            <h4 class="summary">Item Summary</h4>
+            <br>
+            <h2 class="backbutton">&larr; Try Another!</h2>
+          </div></center>
+        </div>
+        
+      </div>
+    </div>
+   
+  </div>      
+  </body>
+</html>

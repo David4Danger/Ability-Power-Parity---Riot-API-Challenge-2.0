@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<html lang="en-CA">
+
+  <head>
+    <title> APP - Morellonomicon </title>
+    
+    <!--Texts-->
+    <link href='http://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
+    <!--Styles-->
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/static/items.css">
+  
+    <!--Metadata--> 
+    <meta name="keywords" content="david skudra, waterloo, computer science, league of legends, lol, ap, ability power parity, ability power, 5.14, 5.13, 5.11, riot games, riot, api, api challenge 2.0, morellonomicon">
+    <meta name="description" content="In-depth analysis of AP item changes in patch 5.13">
+  
+    <!--Scripts-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-66163034-2', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/morel.js"></script>
+  </head>
+  
+  <body>
+  <div class="main">
+    <div class="navigation">
+      <ul class="nav nav-pills">
+        <li><a href="/items/Archangels-Staff"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3003.png" height="64" width="64"></a></li>
+        <li><a href="/items/Athenes-Unholy-Grail"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3174.png" height="64" width="64"></a></li>
+        <li><a href="/items/Liandrys-Torment"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3151.png" height="64" width="64"></a></li>
+        <li><a href="/items/Ludens-Echo"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3285.png" height="64" width="64"></a></li>
+        <li><a href="/items/Nashors-Tooth"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3115.png" height="64" width="64"></a></li>
+        <li><a href="/items/Rabadons-Deathcap"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3089.png" height="64" width="64"></a></li>
+        <li><a href="/items/Rod-Of-Ages"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3027.png" height="64" width="64"></a></li>
+        <li><a href="/items/Rylais-Crystal-Scepter"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3116.png" height="64" width="64"></a></li>
+        <li><a href="/items/Void-Staff"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3135.png" height="64" width="64"></a></li>
+        <li><a href="/items/Will-Of-The-Ancients"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3152.png" height="64" width="64"></a></li>
+        <li><a href="/items/Zhonyas-Hourglass"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3157.png" height="64" width="64"></a></li>
+        <li><a href="/"><h3>HOME</h3></a></li>
+      </ul>
+    </div>
+    
+    <div class="container">
+      <div class="row">
+        <div class="item-panel">
+          <div class="col-md-4">
+          <center>
+          <h2>Morellonomicon</h2>
+            <div class="row">
+              <div class="col-xs-6">
+                <h3>5.11</h3>
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/item/3165.png"></div>
+                <h5>2300g</h5>
+                <h5>&uarr;</h5>
+              </div>
+              <div class="col-xs-6">
+                <h3>5.14</h3>
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/item/3165.png"></div>
+                <h5>2300g</h5>
+                <h5>&uarr;</h5>
+              </div>
+              <div class="col-xs-6">
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/item/3108.png"></div>
+                <h5>820g</h5>
+                <h5>+</h5>
+              </div>
+              <div class="col-xs-6">
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/item/3108.png"></div>
+                <h5>820g</h5>
+                <h5>+</h5>
+              </div>
+              <div class="col-xs-6">
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/item/3114.png"></div>
+                <h5>600g</h5>
+                <h5>+</h5>
+              </div>
+              <div class="col-xs-6">
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/item/3114.png"></div>
+                <h5>600g</h5>
+                <h5>+</h5>
+              </div>
+              <div class="col-xs-6">
+                <h5>880g</h5>
+              </div>
+              <div class="col-xs-6">
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/item/1052.png"></div>
+                <h5>435g</h5>
+                <h5>+</h5>
+                <h5>445g</h5><br><br>
+              </div>
+            </div>
+          <h5>+80 Ability Power</h5>
+          <h5>+20% Cooldown Reduction</h5>
+          <h5>+100% Base Mana Regen</h5>
+          <h5>Unique Passive - Dealing magic damage to enemy champions below 40% health inflicts Grievous Wounds for 4 seconds.</h5>
+          </center>
+          </div>
+        </div>
+        
+        <div class="info-tab">
+          <div class="col-md-4">
+          <div class="default">
+            <center><h2>Dataset</h2></center>
+            <br>
+            <h5>5.11 Winrate: 52.29%</h5>
+            <h5>5.14 Winrate: 52.91%</h5>
+            <h5>Winrate change: 0.62%</h5>
+            <h5>Built per game in 5.11: 0.64</h5>
+            <h5>Built per game in 5.14: 0.55</h5>
+            <h5>Built per game % change: -14.06%</h5>
+            <br>
+            <h5>Average 5.11 win game length: 22.03 minutes</h5>
+            <h5>Average 5.14 win game length: 21.53 minutes</h5>
+            <h5>Average win game length % change: -2.32%</h5>
+            <h5>Average 5.11 loss game length: 22.41 minutes</h5>
+            <h5>Average 5.14 loss game length: 21.93 minutes</h5>
+            <h5>Average loss game length % change: -2.19%</h5>
+            <br>
+            <p class="summtab">Summary: Morellonomicon recieved the same treatment as Athene's, making it slightly friendlier in the early game so it could compete with some other select AP items. Like Athene's, an increase in winrate followed but popularity seemingly dipped. Infact, the amount of Morellonomicons built per game had nearly the exact same percentage drop as Athene's. Coincidence? I THINK NOT.</p>
+            <p class="summtab">"ARE THESE CHOICES MEANINGFUL? You tell us." Ahri players everywhere rejoice thanks to some crisp changes, even if it is just a book.</p>
+          </div>
+          <div class="luluinfo">
+            <h5>Lulu built Morellonomicon 30.07% of the time in patch 5.11.</h5>
+            <h5>Lulu built Morellonomicon 30.23% of the time in patch 5.13.</h5>
+            <h5>Lulu built Morellonomicon 0.17% more after it was updated.<h5>
+            <p>The changes to Morellonomicon were meant to promote buying the item more often since it was friendlier to build early. It is clear this change was of no concern to Lulu players, who are picking it up just as much as they were before. The relatively low overall build rate is due to Lulu's popularity as a support champion.</p>
+          </div>
+          <div class="ahriinfo">
+            <h5>Ahri built Morellonomicon 64.45% of the time in patch 5.11.</h5>
+            <h5>Ahri built Morellonomicon 66.69% of the time in patch 5.14.</h5>
+            <h5>Ahri built Morellonomicon 2.24% more after it was updated.</h5>
+            <p>The changes to Morellonomicon seem to have made it slightly more favourable with Ahri players. Hopefully this small change in popularity is related to Ahri players opting for Morellonomicon earlier instead of the Needlessly Large Rod first back purchase.</p>
+          </div>
+          <div class="lebinfo">
+            <h5>LeBlanc built Morellonomicon 67.79% of the time in patch 5.11.</h5>
+            <h5>LeBlanc built Morellonomicon 66.25% of the time in patch 5.14.</h5>
+            <h5>LeBlanc built Morellonomicon -1.54% less after is was updated.</h5>
+            <p>Unlike fellow burst mage Ahri, LeBlanc players didn't take to the updated Morellonomicon. This is well within expected variance but the real point here is that none of these Morellonomicon building champions saw a real increase in how often they built this item - proving the changes to have not much of an impact. LeBlanc is no exception to this.</p>
+          </div>
+          </div>
+        </div>
+        
+        <div class="picture-panel">
+          <div class="col-md-4">
+          <center><h2>Learn More!</h2>
+          <br>
+            <img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/champion/Ahri.png" class="ahriicon">
+            <img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/champion/Leblanc.png" class="lebicon">
+            <img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/champion/Azir.png" class="aziricon">
+            <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Lulu_0.jpg" class="lulupic">
+            <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Ahri_3.jpg" class="ahripic">
+            <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Leblanc_0.jpg" class="lebpic">
+            <h4 class="lulu">Lulu Building Morellonomicon</h4>
+            <br>
+            <h4 class="ahri">Ahri Building Morellonomicon</h4>
+            <br>
+            <h4 class="leblanc">LeBlanc Building Morellonomicon</h4>
+            <br>
+            <h4 class="summary">Item Summary</h4>
+            <br>
+            <h2 class="backbutton">&larr; Try Another!</h2>
+          </div></center>
+        </div>
+        
+      </div>
+    </div>
+  
+  </div>    
+  </body>
+</html>

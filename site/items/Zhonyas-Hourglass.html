@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<html lang="en-CA">
+
+  <head>
+    <title> APP - Zhonya's </title>
+    
+    <!--Texts-->
+    <link href='http://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
+    <!--Styles-->
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/static/items.css">
+  
+    <!--Metadata--> 
+    <meta name="keywords" content="david skudra, waterloo, computer science, league of legends, lol, ap, ability power parity, ability power, 5.14, 5.13, 5.11, riot games, riot, api, api challenge 2.0, zhonya's hourglass">
+    <meta name="description" content="In-depth analysis of AP item changes in patch 5.13">
+  
+    <!--Scripts-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-66163034-2', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/zhon.js"></script>
+  </head>
+  
+  <body>
+  <div class="main">
+    <div class="navigation">
+      <ul class="nav nav-pills">
+        <li><a href="/items/Archangels-Staff"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3003.png" height="64" width="64"></a></li>
+        <li><a href="/items/Athenes-Unholy-Grail"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3174.png" height="64" width="64"></a></li>
+        <li><a href="/items/Liandrys-Torment"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3151.png" height="64" width="64"></a></li>
+        <li><a href="/items/Ludens-Echo"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3285.png" height="64" width="64"></a></li>
+        <li><a href="/items/Morellonomicon"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3165.png" height="64" width="64"></a></li>
+        <li><a href="/items/Nashors-Tooth"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3115.png" height="64" width="64"></a></li>
+        <li><a href="/items/Rabadons-Deathcap"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3089.png" height="64" width="64"></a></li>
+        <li><a href="/items/Rod-Of-Ages"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3027.png" height="64" width="64"></a></li>
+        <li><a href="/items/Rylais-Crystal-Scepter"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3116.png" height="64" width="64"></a></li>
+        <li><a href="/items/Void-Staff"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3135.png" height="64" width="64"></a></li>
+        <li><a href="/items/Will-Of-The-Ancients"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3152.png" height="64" width="64"></a></li>
+        <li><a href="/"><h3>HOME</h3></a></li>
+      </ul>
+    </div>
+    
+    <div class="container">
+      <div class="row">
+        <div class="item-panel">
+          <div class="col-md-4">
+          <center>
+          <h2>Zhonya's Hourglass</h2>
+            <div class="row">
+              <div class="col-xs-6">
+                <h3>5.11</h3>
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3157.png"></div>
+                <h5>3300g</h5>
+                <h5>&uarr;</h5>
+              </div>
+              <div class="col-xs-6">
+                <h3>5.14</h3>
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.16.1/img/item/3157.png"></div>
+                <h5>3000g</h5>
+                <h5>&uarr;</h5>
+              </div>
+              <div class="col-xs-6">
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/item/1058.png"></div>
+                <h5>1600g</h5>
+                <h5>+</h5>
+              </div>
+              <div class="col-xs-6">
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/item/1058.png"></div>
+                <h5>1250g</h5>
+                <h5>+</h5>
+              </div>
+              <div class="col-xs-6">
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/item/3191.png"></div>
+                <h5>1200g</h5>
+                <h5>+</h5>
+              </div>
+              <div class="col-xs-6">
+                <div class="pic"><img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/item/3191.png"></div>
+                <h5>1200g</h5>
+                <h5>+</h5>
+              </div>
+              <div class="col-xs-6">
+                <h5>500g</h5><br><br>
+              </div>
+              <div class="col-xs-6">
+                <h5>550g</h5><br><br>
+              </div>
+              <div class="col-xs-6">
+                <h5>+120 Ability Power</h5>
+              </div>
+              <div class="col-xs-6">
+                <h5>+100 Ability Power</h5>
+              </div>
+            </div>
+          <h5>+50 Armor</h5>
+          <h5>Unique Active - Stasis</h5>
+          </center>
+          </div>
+        </div>
+        
+        <div class="info-tab">
+          <div class="col-md-4">
+          <div class="default">
+            <center><h2>Dataset</h2></center>
+            <br>
+            <h5>5.11 Winrate: 55.65%</h5>
+            <h5>5.14 Winrate: 54.99%</h5>
+            <h5>Winrate change: -0.66%</h5>
+            <h5>Built per game in 5.11: 1.07</h5>
+            <h5>Built per game in 5.14: 1.04</h5>
+            <h5>Built per game % change: -2.80%</h5>
+            <br>
+            <h5>Average 5.11 win game length: 23.64 minutes</h5>
+            <h5>Average 5.14 win game length: 22.87 minutes</h5>
+            <h5>Average win game length % change: -3.38%</h5>
+            <h5>Average 5.11 loss game length: 24.60 minutes</h5>
+            <h5>Average 5.14 loss game length: 23.75 minutes</h5>
+            <h5>Average loss game length % change: -3.57%</h5>
+            <br>
+            <p class="summtab">Summary: Zhonya's Hourglass recieved the 120 AP to 100 AP adjustment like Luden's Echo did, along with the 300g discount. The only difference here is the added utility Luden's Echo got, while Zhonya's just got appropriately scaled down. As the number above dictate, this was not very impactful on winrate or popularity. As long as Zhonya's has decent stats, it will always be a staple due to it's active. New patch, same old Zhonya's.
+          </div>
+          <div class="ruminfo">
+            <h5>Rumble built Zhonya's 62.99% of the time in patch 5.11.</h5>
+            <h5>Rumble built Zhonya's 66.80% of the time in patch 5.14.</h5>
+            <h5>Rumble built Zhonya's 3.81% more after it was updated.</h5>
+            <p>Zhonya's Hourglass got a bit cheaper with a bit less ability power tacked on to it, so it seems Rumble players were able to get their hands on it a bit more often with the cheaper price. This item is heading towards staple-popularity on Rumble.</p>
+          </div>
+          <div class="keninfo">
+            <h5>Kennen built Zhonya's 74.91% of the time in patch 5.11.</h5>
+            <h5>Kennen built Zhonya's 78.53% of the time in patch 5.14.</h5>
+            <h5>Kennen built Zhonya's 3.62% more after it was updated.</h5>
+            <p>With the cheaper pricetag, Kennen players found themselves buying Zhonya's hourglass even more often than before. The only real downside to the item for a Kennen was the hefty pricetag, as the real objective here is that amazing passive.</p>
+          </div>
+          <div class="morginfo">
+            <h5>Morgana built Zhonya's 63.57% of the time in patch 5.11.</h5>
+            <h5>Morgana built Zhonya's 66.68% of the time in patch 5.14.</h5>
+            <h5>Morgana built Zhonya's 3.11% more after it was updated.</h5>
+            <p>Morgana players also found themselves with a few extra Zhonya's, as the price decrease definitely fit in some budgets that it previously did not. Whether Morgana is mid or support, Zhonya's fits her playstyle very well, don't expect this number to drop any time soon.</p>
+          </div>
+          <div class="heiminfo">
+            <h5>Heimerdinger built Zhonya's 78.75% of the time in patch 5.11.</h5>
+            <h5>Heimerdinger built Zhonya's 79.19% of the time in patch 5.14.</h5>
+            <h5>Heimerdinger built Zhonya's 0.44% more after it was updated.</h5>
+            <p>It isn't surprising that Heimerdinger players are still building Zhonya's hourglass. It doesn't matter how fed he is, in teamfight the donger will always be everyones first target (thanks, qtpie).</p>
+          </div>
+          <div class="sorainfo">
+            <h5>Soraka built Zhonya's 3.10% of the time in patch 5.11.</h5>
+            <h5>Soraka built Zhonya's 2.56% of the time in patch 5.14.</h5>
+            <h5>Soraka built Zhonya's -0.54% less after it was updated.</h5>
+            <p>Just to be clear, this likely has nothing to do with the changes to Zhonya's Hourglass, no, this is about an incredible injustice. Riot "fixed" the "bug" that caused Soraka to have her unique colour when using Zhonya's hourglass.</p>
+            <p>There can be no doubt that the massive drop in Soraka Zhonya's population is due to this maltreatment.</p>
+            <br>
+            <h2>RIP 2009-2015</h2>
+            <img src="/static/images/Soraka Zhonyas.png" class="sorapic2">
+          </div>
+        </div>
+        
+        <div class="picture-panel">
+          <div class="col-md-4">
+          <center><h2>Learn More!</h2>
+            <br>
+            <img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/champion/Viktor.png" class="morgicon">
+            <img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/champion/Annie.png" class="dianaicon">
+            <img src="http://ddragon.leagueoflegends.com/cdn/5.2.1/img/champion/Fizz.png" class="fizzicon">
+            <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Rumble_3.jpg" class="rumpic">
+            <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Kennen_0.jpg" class="kenpic">
+            <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Morgana_0.jpg" class="morgpic">
+            <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Heimerdinger_0.jpg" class="heimpic">
+            <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/loading/Soraka_0.jpg" class="sorapic">
+            <h4 class="rumble">Rumble Building Zhonya's</h4>
+            <br>
+            <h4 class="kennen">Kennen Building Zhonya's</h4>
+            <br>
+            <h4 class="morgana">Morgana Building Zhonya's</h4>
+            <br>
+            <h4 class="heimerdinger">Heimerdinger Building Zhonya's</h4>
+            <br>
+            <h4 class="soraka">Soraka Building Zhonya's</h4>
+            <br>
+            <h4 class="summary">Item Summary</h4>
+            <br>
+            <h2 class="backbutton">&larr; Try Another!</h2>
+          </div></center>
+        </div>
+        
+      </div>
+    </div>
+  
+  </div>  
+  </body>
+</html>
