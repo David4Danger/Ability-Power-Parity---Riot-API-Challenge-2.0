@@ -81,3 +81,87 @@ with open(r'E:\DIRECTORY HERE\5.14\RANKED_SOLO\RU.json') as data_file:
         RU514R = json.load(data_file)   
 with open(r'E:\DIRECTORY HERE\5.14\RANKED_SOLO\TR.json') as data_file:
         TR514R = json.load(data_file)
+        
+with open(r'E:\DIRECTORY HERE\5.11\NORMAL_5X5\BR.json', 'w') as fp:
+        json.dump(BRGames511N, fp)
+with open(r'E:\DIRECTORY HERE\5.11\NORMAL_5X5\EUNE.json', 'w') as fp:
+        json.dump(EUNEGames511N, fp)        
+with open(r'E:\DIRECTORY HERE\5.11\NORMAL_5X5\EUW.json', 'w') as fp:
+        json.dump(EUWGames511N, fp)                
+with open(r'E:\DIRECTORY HERE\5.11\NORMAL_5X5\KR.json', 'w') as fp:
+        json.dump(KRGames511N, fp)                        
+with open(r'E:\DIRECTORY HERE\5.11\NORMAL_5X5\LAN.json', 'w') as fp:
+        json.dump(LANGames511N, fp)                                
+with open(r'E:\DIRECTORY HERE\5.11\NORMAL_5X5\LAS.json', 'w') as fp:
+        json.dump(LASGames511N, fp)                                        
+with open(r'E:\DIRECTORY HERE\5.11\NORMAL_5X5\NA.json', 'w') as fp:
+        json.dump(NAGames511N, fp)        
+with open(r'E:\DIRECTORY HERE\5.11\NORMAL_5X5\OCE.json', 'w') as fp:
+        json.dump(OCEGames511N, fp)                
+with open(r'E:\DIRECTORY HERE\5.11\NORMAL_5X5\RU.json', 'w') as fp:
+        json.dump(RUGames511N, fp)                        
+with open(r'E:\DIRECTORY HERE\5.11\NORMAL_5X5\TR.json', 'w') as fp:
+        json.dump(TRGames511N, fp)     
+        
+with open(r'E:\DIRECTORY HERE\5.11\RANKED_SOLO\BR.json', 'w') as fp:
+        json.dump(BRGames511N, fp)
+with open(r'E:\DIRECTORY HERE\5.11\RANKED_SOLO\EUNE.json', 'w') as fp:
+        json.dump(EUNEGames511N, fp)        
+with open(r'E:\DIRECTORY HERE\5.11\RANKED_SOLO\EUW.json', 'w') as fp:
+        json.dump(EUWGames511N, fp)                
+with open(r'E:\DIRECTORY HERE\5.11\RANKED_SOLO\KR.json', 'w') as fp:
+        json.dump(KRGames511N, fp)                        
+with open(r'E:\DIRECTORY HERE\5.11\RANKED_SOLO\LAN.json', 'w') as fp:
+        json.dump(LANGames511N, fp)                                
+with open(r'E:\DIRECTORY HERE\5.11\RANKED_SOLO\LAS.json', 'w') as fp:
+        json.dump(LASGames511N, fp)                                        
+with open(r'E:\DIRECTORY HERE\5.11\RANKED_SOLO\NA.json', 'w') as fp:
+        json.dump(NAGames511N, fp)        
+with open(r'E:\DIRECTORY HERE\5.11\RANKED_SOLO\OCE.json', 'w') as fp:
+        json.dump(OCEGames511N, fp)                
+with open(r'E:\DIRECTORY HERE\5.11\RANKED_SOLO\RU.json', 'w') as fp:
+        json.dump(RUGames511N, fp)                        
+with open(r'E:\DIRECTORY HERE\5.11\RANKED_SOLO\TR.json', 'w') as fp:
+        json.dump(TRGames511N, fp)      
+        
+with open(r'E:\DIRECTORY HERE\5.14\NORMAL_5X5\BR.json', 'w') as fp:
+        json.dump(BRGames511N, fp)
+with open(r'E:\DIRECTORY HERE\5.14\NORMAL_5X5\EUNE.json', 'w') as fp:
+        json.dump(EUNEGames511N, fp)        
+with open(r'E:\DIRECTORY HERE\5.14\NORMAL_5X5\EUW.json', 'w') as fp:
+        json.dump(EUWGames511N, fp)                
+with open(r'E:\DIRECTORY HERE\5.14\NORMAL_5X5\KR.json', 'w') as fp:
+        json.dump(KRGames511N, fp)                        
+with open(r'E:\DIRECTORY HERE\5.14\NORMAL_5X5\LAN.json', 'w') as fp:
+        json.dump(LANGames511N, fp)                                
+with open(r'E:\DIRECTORY HERE\5.14\NORMAL_5X5\LAS.json', 'w') as fp:
+        json.dump(LASGames511N, fp)                                        
+with open(r'E:\DIRECTORY HERE\5.14\NORMAL_5X5\NA.json', 'w') as fp:
+        json.dump(NAGames511N, fp)        
+with open(r'E:\DIRECTORY HERE\5.14\NORMAL_5X5\OCE.json', 'w') as fp:
+        json.dump(OCEGames511N, fp)                
+with open(r'E:\DIRECTORY HERE\5.14\NORMAL_5X5\RU.json', 'w') as fp:
+        json.dump(RUGames511N, fp)                        
+with open(r'E:\DIRECTORY HERE\5.14\NORMAL_5X5\TR.json', 'w') as fp:
+        json.dump(TRGames511N, fp)             
+        
+with open(r'E:\DIRECTORY HERE\5.14\RANKED_SOLO\BR.json', 'w') as fp:
+        json.dump(BRGames511N, fp)
+with open(r'E:\DIRECTORY HERE\5.14\RANKED_SOLO\EUNE.json', 'w') as fp:
+        json.dump(EUNEGames511N, fp)        
+with open(r'E:\DIRECTORY HERE\5.14\RANKED_SOLO\EUW.json', 'w') as fp:
+        json.dump(EUWGames511N, fp)                
+with open(r'E:\DIRECTORY HERE\5.14\RANKED_SOLO\KR.json', 'w') as fp:
+        json.dump(KRGames511N, fp)                        
+with open(r'E:\DIRECTORY HERE\5.14\RANKED_SOLO\LAN.json', 'w') as fp:
+        json.dump(LANGames511N, fp)                                
+with open(r'E:\DIRECTORY HERE\5.14\RANKED_SOLO\LAS.json', 'w') as fp:
+        json.dump(LASGames511N, fp)                                        
+with open(r'E:\DIRECTORY HERE\5.14\RANKED_SOLO\NA.json', 'w') as fp:
+        json.dump(NAGames511N, fp)        
+with open(r'E:\DIRECTORY HERE\5.14\RANKED_SOLO\OCE.json', 'w') as fp:
+        json.dump(OCEGames511N, fp)                
+with open(r'E:\DIRECTORY HERE\5.14\RANKED_SOLO\RU.json', 'w') as fp:
+        json.dump(RUGames511N, fp)                        
+with open(r'E:\DIRECTORY HERE\5.14\RANKED_SOLO\TR.json', 'w') as fp:
+        json.dump(TRGames511N, fp)              
