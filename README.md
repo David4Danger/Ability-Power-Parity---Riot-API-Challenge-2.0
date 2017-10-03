@@ -1,5 +1,7 @@
 <h1>Ability Power Parity - API Challenge 2.0</h1>
 
+<h2> UPDATE 10/3/17: I recycled my old website and it's blog along with it, as well as the abilitypowerparity hosting website. The code for my entry is all still here though! </h2>
+
 <p>Ability Power Parity is a website designed to demonstrate the changes to all the AP items that recieved changes in patch 5.13.
 It utilizes python to execute exactly 400,000 requests to the Riot API, returning 400,000 unique dictionaries to then be broken
 down and analyzed for information. This information is then displayed on the working demo website, </p>
